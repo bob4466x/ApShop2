@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+}
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.containerAll {
+  width: 100%;
+  height: 100%;
+  background-image: url(../Img/montain.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.block-row {
+  display: flex;
+  align-items: center;
+  border: 2px solid #fff;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 3px #fff;
+  border-radius: 15px;
+  text-align: center;
+}
+img {
+  border-radius: 15px;
+}
+.row {
+  padding: 0 15px 15px;
+  line-height: 80px;
+}
+
+.btn-back {
+  width: 80px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: absolute;
+  top: -90px;
+  left: -550px;
+}
+
+.block-row2 {
+  display: flex;
+  gap: 25px;
+  padding-left: 15px;
+}
+form {
+  width: 100%;
+  height: auto;
+}
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border-radius: 15px;
+  border: transparent;
+  padding: 0 15px;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+}
+
+.login-form input[type="email"] {
+  margin-bottom: 15px;
+}
+.row h1 span {
+  color: #fff;
+  font-size: 35px;
+  text-transform: capitalize;
+  background-image: linear-gradient(#fff, #fff, #fff);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-repeat: no-repeat;
+  background-size: 0%;
+}
+.btn button a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+.row h1 span {
+  animation: textcolor1 3s linear infinite alternate;
+}
+@keyframes textcolor1 {
+  0% {
+    background-size: 0%;
+  }
+  50% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+.row p {
+  color: #eee5e5;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.block-row2 span {
+  color: #000000;
+  text-transform: capitalize;
+  padding-right: 50px;
+}
+.block-row2 li {
+  list-style: none;
+}
+.block-row2 li a {
+  color: rgb(231, 26, 26);
+  text-decoration: none;
+}
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.btn button {
+  padding: 15px 40px;
+  outline: none;
+  background-color: transparent;
+  border-radius: 15px;
+  border: 2px solid rgb(49, 233, 8);
+  font-size: 15px;
+
+  color: #fff;
+  cursor: pointer;
+}
+.btn button.login {
+  background-color: rgb(49, 233, 8);
+  border: none;
+  padding: 15px 50px;
+}
+.btn button.login:hover {
+  background-color: transparent;
+  border: 2px solid rgb(49, 233, 8);
+}
+.btn button.create_account:hover {
+  background-color: rgb(49, 233, 8);
+}
